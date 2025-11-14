@@ -1,6 +1,6 @@
 import axios from "axios";
 import dotenv from 'dotenv'
-import { log } from "node:console";
+
 import express from 'express'
 dotenv.config()
 //console.log(process.env.URL);
