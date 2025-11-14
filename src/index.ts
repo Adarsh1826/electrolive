@@ -107,9 +107,25 @@ app.get("/", (req, res) => {
     res.send(html);
 });
 
+// for free service
+
+app.get("/health",(req,res)=>{
+  res.send().json({
+    "msg":"up"
+  })
+})
 
 app.listen(3000, () => {
     console.log("Server running on http://localhost:3000");
 });
 
 
+
+const hit = async()=>{
+  const res  = await axios.get("https://electrolive.onrender.com")
+  console.log("hit called");
+  
+}
+setInterval(()=>{
+  hit()
+},5000)
