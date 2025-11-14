@@ -1,0 +1,1 @@
+A tiny project that grabs live election data every few seconds… because I don’t have the patience to refresh the page manually.
