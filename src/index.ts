@@ -124,7 +124,7 @@ app.listen(3000, () => {
 const hit = async()=>{
   const res  = await axios.get("https://electrolive.onrender.com/health")
   //console.log("hit called");
-    return res.json();
+    //return res.json();
   
 }
 setInterval(()=>{
