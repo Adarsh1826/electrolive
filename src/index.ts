@@ -110,9 +110,9 @@ app.get("/", (req, res) => {
 // for free service
 
 app.get("/health",(req,res)=>{
-  res.send().json({
-    "msg":"up"
-  })
+     return res.send({
+         "msg":"server is up",
+     })
 })
 
 app.listen(3000, () => {
